@@ -3,10 +3,10 @@ document.getElementById("myForm").addEventListener("submit", function(e) {
   const nome = document.getElementById("nome").value;
 
   fetch("https://script.google.com/macros/s/AKfycbzAZVzybDUX4y1jnaLMTceFQLTu9IXkkWpBFJe9akeN91ewYXr407IwogqvKhWKyIuG/exec", {
-    method: "POST",
-    body: JSON.stringify({ nome: nome }),
-    headers: {
-      "Content-Type": "application/json"
+      method: "POST",
+      body: JSON.stringify({ nome: nome }),
+      headers: {
+        "Content-Type": "application/json"
     }
   })
   .then(r => r.text())
