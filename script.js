@@ -2,7 +2,7 @@ document.getElementById("myForm").addEventListener("submit", function(e) {
   e.preventDefault();
   const nome = document.getElementById("nome").value;
 
-  fetch("https://script.google.com/macros/s/AKfycbwfJVaDZEvBpBtluwNvF8dqapvGDUIGAw28jLIfKnb9NXhhhnuG3dEgAHmfzHWrfhVw/exec", {
+  fetch("https://proxy-google-sheets.vercel.app/", {
       method: "POST",
       body: JSON.stringify({ nome: nome }),
       headers: {
