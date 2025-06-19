@@ -2,7 +2,7 @@ document.getElementById("myForm").addEventListener("submit", function(e) {
   e.preventDefault();
   const nome = document.getElementById("nome").value;
 
-  fetch("https://script.google.com/macros/s/AKfycbz1DLhZCt6D813lqZkwLyYS7o8TWT9dbER6WvV74vUOUT00ohiVUZIOeilhkpNhX2bF/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwfJVaDZEvBpBtluwNvF8dqapvGDUIGAw28jLIfKnb9NXhhhnuG3dEgAHmfzHWrfhVw/exec", {
       method: "POST",
       body: JSON.stringify({ nome: nome }),
       headers: {
